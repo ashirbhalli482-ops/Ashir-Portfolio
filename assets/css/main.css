@@ -2809,6 +2809,13 @@ section,
   .contact .contact-form h3 {
     font-size: 1.75rem;
   }
+  .whatsapp-button-image{
+    max-width: 80px;
+  }
+  .whatsapp-button {
+    bottom: 10px; 
+    left: 10px;  
+  }
 }
 
 .contact .contact-form p {
@@ -2860,4 +2867,44 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   display: block;
+}
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px; 
+  left: 20px; 
+  z-index: 1;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 50%; */
+}
+/* .whatsapp-button-image{
+  max-width: 40px;
+} */
+
+.whatsapp-button-image{
+  max-width: 120px;
+  animation: whatsapp-float 1s ease-in-out infinite;
+}
+
+@keyframes whatsapp-float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+@media (max-width: 430px) {
+  .whatsapp-button-image{
+    max-width: 85px;
+  }
+  .whatsapp-button {
+    bottom: 10px; 
+    left: 10px;  
+  }
 }
